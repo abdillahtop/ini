@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To My Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" ;>
+    <!-- Akhir Boostrap-->
+
+    <!-- Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/animasi-navbar.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+        $('#navbar').addClass('light');
+      }
+      else
+      {
+        $('#navbar').removeClass('light');
+      }
+    });
+
+    $('#myList a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+    </script>
+  
+    <!-- Akhir Javascript-->
+
+    <!-- My Font -->
+    <style> @import url('font/Viga/Viga-Regular.ttf'); </style>
+    <style> @import url('font/Roboto-Regular.ttf'); </style>
+    <!-- Akhir My Font -->
+
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Akhir Main CSS-->
+</head> 
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">AbdillahDM</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li  class="nav-item">
+              <a class="nav-link "  href="#beranda">Beranda</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link"  href="#portofolio">Portofolio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- AkhirNavbar -->
+  <section>
+    <!-- Jumbotron -->
+    <div id="beranda" class="jumbotron jumbotron-fluid">
+      <img class="hero" src="img/hero1.png">
+      <div class="container">
+        <h2 class="display-4 mt-2 mb-4">“ Bisa karena terbiasa, terus belajar mulai dari 0 hingga sekarang ”</h2>
+        <button type="button" class="btn btn-primary hire-me" data-toggle="modal" data-target="#exampleModal">
+          Hire Me
+        </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portofolio ">
+      <!-- Portofolio -->
+      <div id="portofolio" class="container portofolio justify-content-center">
+        <div class="row">
+          <div class="col-lg text-center">
+            <h1 id="start-about-me">Portofolio Saya</h1>
+            <span>"Semoga anda menyukai portofolio saya, semua saya buat dengan hati dikarenakan hobby saya semata." </span>
+          </div>
+        </div>
+
+        <div class="row icon-porto text-center">
+          <div class="col-lg ">
+            <div class="row ml-3 mr-3 justify-content-around ">
+              <div class="col-lg-3 border-icon">
+                <img class="icon" src="img/icon1.png" alt="website">
+                <h3>Website</h3>
+                <h6>Beberapa Website yang saya buat, dengan menerapkan design UI/UX.
+                  </h6>
+                  <button type="button" class="btn btn-primary view" data-toggle="modal" data-target="#exampleModal1">
+                      View
+                    </button>
+              </div>
+
+              <div class="col-lg-3 border-icon">
+                  <img class="icon" src="img/icon2.png" alt="Design">
+                  <h3>Graphic Design</h3>
+                  <h6>Beberapa Design dimulai dari UI/UX website maupun aplikasi, Illustrator, dsb. <br> </h6>
+                  <button type="button" class="btn btn-primary view" data-toggle="modal" data-target="#exampleModal2">
+                      View
+                    </button>
+              </div>
+
+              <div class="col-lg-3 border-icon">
+                  <img class="icon" src="img/icon3.png" alt="Android">
+                  <h3>Android</h3>
+                  <h6 class="mb-3">Beberapa aplikasi android yang saya buat, dengan menerapkan design UI/UX</h6>
+                  <button type="button" class="btn btn-primary view" data-toggle="modal" data-target="#exampleModal3">
+                      View
+                    </button>
+              </div>
+          </div>
+        </div>
+      <!-- Akhir Portofolio -->
+    <!-- Akhir Jumbotron-->  
+  </section>
+
+  <section id="about-me" class="mt-n5 pb-5">
+    <div class="container justify-content-center">
+        <div class="row">
+          <div class="col text-center">
+            <h1 id="start-about-me">About Me</h1>
+            <span>Nothing special about me, but i confident i can make something big in future</span>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-5 offset-1">
+            <img class="img-about-me1 text-center"src="img/datadiri.png">
+          </div>
+
+          <div class="col-lg-5 mt-5 ml-3">
+            <h3>Data Diri</h3>
+            <ul>
+              <li class="list"><h5>Nama   :   Abdillah Dzulfikar Mustanir, A.Md</h5></li>
+              <li class="list"><h5>Tempat, tgl Lahit   :   Jombang. 11 September 1996</h5></li>
+              <li class="list"><h5>Agama :  Islam</h5></li>
+              <li class="list"><h5>Status  :   Belum Kawin</h5></li>
+            </ul> 
+            <a class="link-icon mt-3" href="#">Lihat selengkapnya</a>
+          </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-5 mt-4 ml-3">
+            <h3 class=" mb-4">Pendidikan</h3>
+            <h4 >Formal :</h4>
+            <ul>
+              <li class="list"><h5>SD   :  SDN Karangduren 03</h5></li>
+              <li class="list"><h5>SMP  :   SMPN 1 Kepanjen</h5></li>
+              <li class="list"><h5>SMK : SMKN 11 Malang</h5></li>
+              <li class="list"><h5>Politeknik Negeri Malang : Teknik Elektro (GPA.309)</h5></li>
+            </ul> 
+              <h4>Non-Formal</h4>
+              <ul>
+                <li class="list"><h5>Kursus Bhs. Inggris Kampung inggris</h5></li>
+              </ul> 
+          </div>
+
+          <div class="col-lg-5 pt-3 offset-1">
+            <img class="img-about-me2" src="img/pendidikan.png">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="skill" class="mt-5 pt-3 pb-5">
+    <div class="container ">
+      <div class="row justify-content-center mt-5">
+          <h1 id="text-skill" class="mb-5">My Skill</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 ml-3 mr-3">
+          <h2>PEMROGRAMAN</h2>
+          <div class="skill-pemrograman">
+              <p>HTML :</p>
+              <p>50%</p>
+              <div class="skill">
+                <div class="percentase-skill"style="width: 50%" ></div>
+              </div>
+          </div>
+          
+          <div class="skill-pemrograman">
+            <p>CSS :</p>
+            <p>50%</p>
+            <div class="skill">
+              <div class="percentase-skill"style="width: 50%" ></div>
+            </div>
+          </div>
+          
+          <div class="skill-pemrograman">
+            <p>PHP :</p>
+            <p>50%</p>
+            <div class="skill">
+              <div class="percentase-skill"style="width: 50%" ></div>
+            </div>
+          </div>
+          
+          <div class="skill-pemrograman ">
+            <p>javascript :</p>
+            <p>25%</p>
+            <div class="skill">
+              <div class="percentase-skill"style="width: 25%" ></div>
+            </div>
+          </div>
+              
+          <div class="skill-pemrograman">
+            <p>MySQL :</p>
+            <p>25%</p>
+            <div class="skill">
+              <div class="percentase-skill" style="width: 25%" ></div>
+            </div>
+          </div>
+              
+          <div class="skill-pemrograman">
+            <p>Java :</p>
+            <p>30%</p>
+            <div class="skill">
+              <div class="percentase-skill "style="width: 30%" ></div>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-6 ml-3 mr-3">
+        <img class="img-about-me2" src="img/pemrograman.png">
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer text-center">
+      <p>©2019. Portfolio Abdillah </p>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Hubungi Saya</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Email :</h4>
+            <p><a href="">abdillahtop@gmail.com</a></p>
+            <h4>Whatsapp :</h4>
+            <p><a href="">0822 2987 8185</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Akhir Modal -->
+</body>
+</html>

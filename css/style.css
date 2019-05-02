@@ -1,0 +1,265 @@
+body {
+    background-color: #fcfcfc;
+}
+
+/* Button */
+.tombol {
+    border: 1px solid blue;
+    border-radius: 50px;
+    
+}
+
+/* h1,h3, p,span*/
+h1,h2,h3,h4,h5,h6,p,span{
+    font-family: roboto;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333333;
+}
+h2{
+    font-size: 32px;
+    color: #feffff;
+    font-weight: 500;
+}
+
+h3 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 500;
+}
+h4 {
+    color: #555;
+}
+h5{
+    color: #878787;
+    font-size: 18px;
+    font-weight: 300; 
+}
+h6 {
+    color: #878787;
+    font-weight: 300;
+}
+p{
+    font-size: 18px;
+    color: #feffff;
+}
+
+span{
+    font-size: 28px;
+    color: #878787;
+    font-weight: 200;
+}
+.list {
+    list-style: none;
+    margin-left: -40px;
+}
+#beranda {
+    background-color: #fcfcfc;
+}
+/* Icon */
+.icon-porto{
+    margin-top: 30px;
+}
+
+.icon {
+    height: 100px;
+}
+
+a.link-icon {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.border-icon {
+    border-radius: 10px;
+    padding: 2em;
+    margin-bottom: 30px;
+}
+
+.border-icon:hover{
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+/* Portofolio */
+.portofolio {
+    padding: auto 1em;
+    background: #ecf2fe;
+}
+
+/* Navbar */
+.navbar {
+    color: #fcfcfc;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 75px;
+    z-index: 3;
+    transition: all 0.5 ease;
+    
+}
+
+#navbar.light{
+    background:#fcfcfc;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar-brand */
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+#beranda, #portfolio, #about-me {
+    transition: all 0.5s ease-in-out 0s;
+}
+/* Hero */
+.hero {
+    width: 100%;
+    margin-top: 30px;
+    background-size: cover;
+}
+
+/* Jumbotron */
+.jumbotron {
+    text-align: center;
+    max-width: 100%;
+}   
+
+
+.jumbotron .display-4 {
+    color: #4c4c4c;
+    font-size: 28px;
+    padding: 0.5em;
+}
+
+.hire-me {
+    border-radius: 30px;
+    padding: 0.3em 2em;
+    font-family: roboto;
+    font-size: 28px;
+}
+
+.view{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 0 2em;
+    font-family: roboto;
+    font-size: 20px;
+}
+
+/* Back to top*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #71c55d;
+    line-height: 1;
+    color: #fff;
+    padding: 7px 12px 13px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+  }
+
+  .img-about-me1 {
+      width:80%;
+      height: auto;
+  }
+
+  .img-about-me2 {
+    width:100%;
+    height: auto;
+}
+  
+/* ABout Me*/
+#start-about-me {
+    margin-top: 120px;
+}
+
+/* Skill */
+.color-skill{
+    color: #fcffff;s
+}
+.skill-pemrograman p:nth-child(2){
+ float: right;
+ position: relative;
+ top:  -5px;
+ margin-bottom:10px;
+}
+.skill {
+    background: #f2ffff;
+    padding: 4px;
+    border: 1px solid #feffff;
+    border-radius: 20px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.percentase-skill{
+    background: #c2d6ea;
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+}
+
+#skill {
+    background-image: linear-gradient(to bottom right, #5586ff, #555aee);
+    min-height: 720px;
+}
+
+#text-skill {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 600;
+        color: #feffff;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+}
+/* Mobile */
+@media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  }
+  
+
+/*  DESKTOP VERSION  */
+@media (min-width: 922px) { 
+    
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 25px;
+    }   
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .active{
+        color: blue;
+    }
+    .hero{
+        margin-top: -75px;
+    }
+    .jumbotron{
+        width: 100%;
+    }
+}
