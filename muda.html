@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To My Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" ;>
+    <!-- Akhir Boostrap-->
+
+    <!-- Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/animasi-navbar.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+        $('#navbar').addClass('light');
+      }
+      else
+      {
+        $('#navbar').removeClass('light');
+      }
+    });
+
+    $('#myList a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+    </script>
+  
+    <!-- Akhir Javascript-->
+
+    <!-- My Font -->
+    <style> @import url('font/Viga/Viga-Regular.ttf'); </style>
+    <style> @import url('font/Roboto-Regular.ttf'); </style>
+    <!-- Akhir My Font -->
+
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Akhir Main CSS-->
+</head> 
+<body>
+  <section id="about-me" class="mt-n5 pb-5">
+    <div class="container justify-content-center">
+        <div class="row">
+          <div class="col text-center">
+            <h1 id="start-about-me">Untuk Kalangan Muda</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-5 offset-1">
+            <img class="img-about-me1 text-center"src="img/muda.png">
+          </div>
+
+          <div class="col-lg-5 mt-5 ml-3">
+            <h5>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </h5>
+          </div>
+        </div>
+      </div>
+  </section>
+
+</body>
+</html>
